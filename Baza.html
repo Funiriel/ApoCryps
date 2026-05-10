@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Mars Base Alpha</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style3.css">
+</head>
+
+<body>
+
+<!-- NAVBAR -->
+ <!-- НАВІГАЦІЯ -->
+  <header>
+    <nav class="navbar">
+
+      <div class="nav-container">
+
+        <div class="Pic">
+          <div class="logo">
+            <span class="Apo">Apo</span><span class="Cryps">Cryps</span>
+          </div>
+        </div>
+
+        <div class="nav-menu">
+          <a href="index.html">Головна</a>
+          <a href="Exp.html">Екіпаж</a>
+          <a href="baza.html">База</a>
+          <a href="kwiz.html">Квіз</a>
+        </div>
+
+      </div>
+
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+
+      <div 
+        class="hero-bg active" 
+        style="background-image: url('MarsHero1.jpg');">
+      </div>
+
+      <div 
+        class="hero-bg" 
+        style="background-image: url('MarsHero2.jpg');">
+      </div>
+
+      <div 
+        class="hero-bg" 
+        style="background-image: url('MarsHero3.jpg');">
+      </div>
+
+      <div class="hero-content">
+
+        <h1 class="hero-title gradient-text">
+          База на Марсі:<br>
+          Перша постійна колонія
+        </h1>
+
+        <p class="hero-subtitle-big">
+          Досліджуй. Живи. Процвітай на Червоній планеті.
+        </p>
+
+      </div>
+
+    </section>
+  </main>
+<!-- 3D MAP -->
+<section class="mars-map">
+
+  <canvas id="scene"></canvas>
+ <div id="tooltip">
+    <div class="tip-name"></div>
+    <div class="tip-info"></div>
+  </div>
+</section>
+  <footer>
+    <section class="footer-section">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-left">
+            <h2>Зв'яжись<br>з <span>ApoCryps</span></h2>
+            <p>Хочеш стати частиною місії, маєш питання про відбір або просто хочеш слідкувати за прогресом — пиши нам.</p>
+            <div class="social-row">
+              <div class="social-btn">𝕏</div>
+              <div class="social-btn">in</div>
+              <div class="social-btn">▶</div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <form id="contact-form">
+              <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+              <input type="email" id="email" name="email" placeholder="Ваш email" required>
+              <textarea id="message" name="message" placeholder="Ваше повідомлення або питання..." required></textarea>
+              <button type="submit" id="submit-btn">Надіслати повідомлення</button>
+            </form>
+          </div>
+        </div>
+        
+    </section>
+  </footer>
+
+<script type="module" src="three.js"></script>
+<script src="script3.js"></script>
+
+
+
+</body>
+</html>
