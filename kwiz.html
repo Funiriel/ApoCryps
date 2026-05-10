@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mars Base Alpha — ApoCryps</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style6.css">
+</head>
+<body>
+<header>
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="Pic">
+        <div class="logo">
+          <span class="Apo">Apo</span><span class="Cryps">Cryps</span>
+        </div>
+      </div>
+      <div class="nav-menu">
+         <a href="index.html">Головна</a>
+          <a href="Exp.html">Екіпаж</a>
+          <a href="baza.html">База</a>
+          <a href="kwiz.html">Квіз</a>
+      </div>
+    </div>
+  </nav>
+
+
+  <section class="hero">
+    <div class="hero-bg active"></div>
+    <div class="hero-bg"></div>
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+      <h1 class="hero-title gradient-text">
+        База на Марсі:<br>
+        Перша постійна колонія
+      </h1>
+      <p class="hero-subtitle hero-subtitle-big">
+        Досліджуй. Живи. Процвітай на Червоній планеті.
+      </p>
+    </div>
+  </section>
+</header>
+
+<main>
+
+  <!-- ═══════════════════════════════════════════
+       QUIZ SECTION
+  ═══════════════════════════════════════════ -->
+  <section class="quiz-section">
+
+    <!-- Particle canvas background -->
+    <canvas id="quiz-particles"></canvas>
+
+    <div class="quiz-wrapper">
+
+      <!-- START SCREEN -->
+      <div class="quiz-start" id="quiz-start">
+        <div class="quiz-start-icon">
+          <svg viewBox="0 0 80 80" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <circle cx="40" cy="40" r="36" stroke="#ff6b4d" stroke-width="1.5" stroke-dasharray="6 4" opacity="0.5"/>
+            <circle cx="40" cy="40" r="26" fill="rgba(255,107,77,0.08)" stroke="rgba(255,107,77,0.3)" stroke-width="1"/>
+            <text x="40" y="47" text-anchor="middle" font-size="22" fill="#ff6b4d" font-family="Orbitron,sans-serif">?</text>
+          </svg>
+        </div>
+        <h2 class="quiz-start-title">Тест Колоніста</h2>
+        <p class="quiz-start-sub">Чи готовий ти до місії на Марс?<br>10 питань про Червону планету — перевір свої знання.</p>
+        <div class="quiz-start-meta">
+          <span><em>10</em> питань</span>
+          <span class="meta-div"></span>
+          <span><em>~3 хв</em></span>
+          <span class="meta-div"></span>
+          <span><em>1 спроба</em></span>
+        </div>
+        <button class="quiz-btn-start" id="btn-start">
+          <span>Почати місію</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+      </div>
+
+      <!-- QUESTION SCREEN -->
+      <div class="quiz-game hidden" id="quiz-game">
+
+        <div class="quiz-header">
+          <div class="quiz-progress-wrap">
+            <div class="quiz-progress-bar" id="quiz-progress-bar"></div>
+          </div>
+          <div class="quiz-meta-row">
+            <span class="quiz-counter" id="quiz-counter">01 / 10</span>
+            <span class="quiz-score-live" id="quiz-score-live">★ 0</span>
+          </div>
+        </div>
+
+        <div class="quiz-card" id="quiz-card">
+          <div class="quiz-q-num" id="quiz-q-num">Питання 01</div>
+          <h3 class="quiz-question" id="quiz-question">Завантаження...</h3>
+          <div class="quiz-options" id="quiz-options"></div>
+          <div class="quiz-feedback hidden" id="quiz-feedback">
+            <span class="feedback-icon" id="feedback-icon"></span>
+            <span class="feedback-text" id="feedback-text"></span>
+          </div>
+        </div>
+
+        <button class="quiz-btn-next hidden" id="btn-next">
+          <span id="btn-next-label">Далі</span>
+          <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M3 8h10M9 4l4 4-4 4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </button>
+
+      </div>
+
+      <!-- RESULT SCREEN -->
+      <div class="quiz-result hidden" id="quiz-result">
+        <div class="result-orbit">
+          <svg viewBox="0 0 140 140" fill="none" xmlns="http://www.w3.org/2000/svg" class="result-svg">
+            <circle cx="70" cy="70" r="64" stroke="rgba(255,107,77,0.15)" stroke-width="1"/>
+            <circle cx="70" cy="70" r="50" stroke="rgba(255,107,77,0.25)" stroke-width="1" stroke-dasharray="5 3"/>
+            <circle cx="70" cy="70" r="36" fill="rgba(255,107,77,0.07)" stroke="rgba(255,107,77,0.4)" stroke-width="1.5"/>
+            <text id="result-score-svg" x="70" y="78" text-anchor="middle" font-size="28" font-weight="700" fill="#ff6b4d" font-family="Orbitron,sans-serif">0/10</text>
+          </svg>
+        </div>
+        <h2 class="result-title" id="result-title">Результат місії</h2>
+        <p class="result-rank" id="result-rank"></p>
+        <p class="result-desc" id="result-desc"></p>
+        <div class="result-actions">
+          <button class="quiz-btn-start" id="btn-retry">
+            <span>Спробувати ще раз</span>
+            <svg width="16" height="16" viewBox="0 0 16 16" fill="none"><path d="M2 8a6 6 0 1 0 1.5-4M2 4v4h4" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+</main>
+ <footer>
+    <section class="footer-section">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-left">
+            <h2>Зв'яжись<br>з <span>ApoCryps</span></h2>
+            <p>Хочеш стати частиною місії, маєш питання про відбір або просто хочеш слідкувати за прогресом — пиши нам.</p>
+            <div class="social-row">
+              <div class="social-btn">𝕏</div>
+              <div class="social-btn">in</div>
+              <div class="social-btn">▶</div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <form id="contact-form">
+              <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+              <input type="email" id="email" name="email" placeholder="Ваш email" required>
+              <textarea id="message" name="message" placeholder="Ваше повідомлення або питання..." required></textarea>
+              <button type="submit" id="submit-btn">Надіслати повідомлення</button>
+            </form>
+          </div>
+        </div>
+        
+    </section>
+  </footer>
+  <script src="script6.js"></script>
+  </body>
+</html>
+
