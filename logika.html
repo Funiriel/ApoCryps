@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>База «Logika» на Марсі</title>
+  <link rel="stylesheet" href="style4.css" />
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="nav-container">
+      <div class="Pic">
+        <div class="logo">
+          <span class="Apo">Apo</span><span class="Cryps">Cryps</span>
+        </div>
+      </div>
+      <div class="nav-menu">
+        <a href="index.html">Головна</a>
+          <a href="Exp.html">Екіпаж</a>
+          <a href="baza.html">База</a>
+          <a href="kwiz.html">Квіз</a>
+      </div>
+    </div>
+  </nav>
+
+  <div class="map-container">
+    <img class="map-bg" src="Baza.png" alt="Mars Base" draggable="false" />
+
+    <div class="header">
+      <div class="header-title">🪐 База «Logika» на Марсі</div>
+      <div class="header-sub">Натисни на об'єкт, щоб дізнатися більше</div>
+    </div>
+
+    <button class="hotspot" style="left:13%;top:13%" data-id="hangar">
+      <div class="hotspot-ring" style="border-color:#ffb74d;box-shadow:0 0 12px #ffb74d66">
+        <span class="hotspot-icon">🚀</span>
+      </div>
+      <div class="hotspot-label">Ангар & Злітна Площадка</div>
+    </button>
+
+    <button class="hotspot" style="left:35%;top:33%" data-id="dome">
+      <div class="hotspot-ring" style="border-color:#4fc3f7;box-shadow:0 0 12px #4fc3f766">
+        <span class="hotspot-icon">🏛️</span>
+      </div>
+      <div class="hotspot-label">Головний Купол</div>
+    </button>
+
+    <button class="hotspot" style="left:57%;top:22%" data-id="greenhouse">
+      <div class="hotspot-ring" style="border-color:#81c784;box-shadow:0 0 12px #81c78466">
+        <span class="hotspot-icon">🌱</span>
+      </div>
+      <div class="hotspot-label">Оранжерея</div>
+    </button>
+
+    <button class="hotspot" style="left:80%;top:10%" data-id="solar">
+      <div class="hotspot-ring" style="border-color:#fff176;box-shadow:0 0 12px #fff17666">
+        <span class="hotspot-icon">☀️</span>
+      </div>
+      <div class="hotspot-label">Сонячна Електростанція</div>
+    </button>
+
+    <button class="hotspot" style="left:18%;top:60%" data-id="storage">
+      <div class="hotspot-ring" style="border-color:#b0bec5;box-shadow:0 0 12px #b0bec566">
+        <span class="hotspot-icon">🛢️</span>
+      </div>
+      <div class="hotspot-label">Склад та Резервуари</div>
+    </button>
+
+    <button class="hotspot" style="left:64%;top:37%" data-id="modules">
+      <div class="hotspot-ring" style="border-color:#ce93d8;box-shadow:0 0 12px #ce93d866">
+        <span class="hotspot-icon">🏠</span>
+      </div>
+      <div class="hotspot-label">Житлові Модулі</div>
+    </button>
+
+    <button class="hotspot" style="left:57%;top:65%" data-id="rover">
+      <div class="hotspot-ring" style="border-color:#ff8a65;box-shadow:0 0 12px #ff8a6566">
+        <span class="hotspot-icon">🚗</span>
+      </div>
+      <div class="hotspot-label">Гараж Марсоходів</div>
+    </button>
+
+    <button class="hotspot" style="left:86%;top:57%" data-id="comms">
+      <div class="hotspot-ring" style="border-color:#80cbc4;box-shadow:0 0 12px #80cbc466">
+        <span class="hotspot-icon">📡</span>
+      </div>
+      <div class="hotspot-label">Антена Зв'язку</div>
+    </button>
+
+    <div class="overlay" id="overlay"></div>
+
+    <div class="info-panel" id="infoPanel">
+      <button class="close-btn" id="closeBtn">×</button>
+      <div class="panel-img-wrap" id="panelImgWrap">
+        <img id="panelImg" src="" alt="" />
+        <div class="panel-img-fade"></div>
+        <div class="panel-img-icon" id="panelImgIcon"></div>
+      </div>
+      <div class="info-panel-body">
+        <div class="info-panel-badge" id="panelBadge"></div>
+        <div class="info-panel-title" id="panelTitle"></div>
+        <div class="info-panel-subtitle" id="panelSubtitle"></div>
+        <div class="info-panel-desc" id="panelDesc"></div>
+        <div class="stats-section">
+          <div class="stats-heading">Технічні характеристики</div>
+          <div class="info-stats" id="panelStats"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script4.js"></script>
+</body>
+</html>
