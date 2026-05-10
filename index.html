@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mars Base Alpha — ApoCryps</title>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&family=Orbitron:wght@500;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- НАВІГАЦІЯ -->
+  <header>
+    <nav class="navbar">
+      <div class="nav-container">
+        <div class="Pic">
+          <div class="logo">
+            <span class="Apo">Apo</span><span class="Cryps">Cryps</span>
+          </div>
+        </div>
+        <div class="nav-menu">
+           <a href="index.html">Головна</a>
+          <a href="Exp.html">Екіпаж</a>
+          <a href="baza.html">База</a>
+          <a href="kwiz.html">Квіз</a>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-bg active"></div>
+      <div class="hero-bg"></div>
+      <div class="hero-bg"></div>
+      <div class="hero-content">
+        <h1 class="hero-title gradient-text">
+          База на Марсі:<br>
+          Перша постійна колонія
+        </h1>
+        <p class="hero-subtitle hero-subtitle-big">
+          Досліджуй. Живи. Процвітай на Червоній планеті.
+        </p>
+      </div>
+    </section>
+
+    <!-- ЧОМУ МАРС? -->
+    <section class="section why-mars">
+      <div class="container reveal">
+        <h2 class="section-title">Чому Марс?</h2>
+        <div class="why-grid">
+          <div class="why-card">
+            <span class="why-icon">🔴</span>
+            <h3>Схожий на Землю</h3>
+            <p>24,5-годинний день, сезони, полярні шапки та залізоокисний ґрунт. Найбільш придатна планета для терраформування.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon">⛏️</span>
+            <h3>Власні ресурси</h3>
+            <p>Під поверхнею — мільярди тонн водяного льоду. Вода, кисень і метанове паливо можна синтезувати на місці.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon">🌍</span>
+            <h3>Резервний дім</h3>
+            <p>Єдиний реальний план Б для людства. Незалежна від Землі цивілізація — запорука виживання виду.</p>
+          </div>
+          <div class="why-card">
+            <span class="why-icon">🚀</span>
+            <h3>Виклик епохи</h3>
+            <p>Місяць довів, що неможливе — можливе. Марс — наступний рубіж, який визначить XXI сторіччя.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- УМОВИ НА МАРСІ -->
+    <section class="section conditions" style="background:linear-gradient(180deg,rgba(255,107,77,.04) 0%,transparent 100%)">
+      <div class="container reveal">
+        <h2 class="section-title">Умови на Марсі</h2>
+        <p class="conditions-subtitle">Реальні дані з орбітальних зондів і марсоходів NASA / ESA</p>
+
+        <!-- ВЕЛИКІ МЕТРИКИ -->
+        <div class="big-metrics">
+          <div class="metric-card cold">
+            <span class="metric-icon">🌡️</span>
+            <span class="metric-value">−63°C</span>
+            <span class="metric-unit">середня температура поверхні</span>
+            <span class="metric-label">Температура</span>
+            <p class="metric-desc">Від −125°C вночі на полюсах до +20°C вдень на екваторі влітку. Перепад за добу — до 100°C.</p>
+          </div>
+          <div class="metric-card pressure">
+            <span class="metric-icon">🌀</span>
+            <span class="metric-value">0,6%</span>
+            <span class="metric-unit">від атмосферного тиску Землі</span>
+            <span class="metric-label">Тиск</span>
+            <p class="metric-desc">610 Па — менше, ніж на висоті 35 км над Землею. Вода закипає при +2°C. Скафандр — обов'язковий.</p>
+          </div>
+          <div class="metric-card radiation">
+            <span class="metric-icon">☢️</span>
+            <span class="metric-value">~0,7</span>
+            <span class="metric-unit">мЗв на добу (поверхня)</span>
+            <span class="metric-label">Радіація</span>
+            <p class="metric-desc">У 700 разів більше, ніж на поверхні Землі. За рік — доза, що відповідає тисячам рентгенівських знімків.</p>
+          </div>
+        </div>
+
+        <!-- ПОРІВНЯННЯ ЗЕМЛЯ VS МАРС -->
+        <div class="compare-grid">
+          <div class="compare-card">
+            <div class="compare-title">Температура поверхні (середня)</div>
+            <div class="compare-row">
+              <span class="planet-label earth">Земля</span>
+              <div class="bar-wrap"><div class="bar earth" style="width:100%"></div></div>
+              <span class="bar-val earth-val">+15°C</span>
+            </div>
+            <div class="compare-row">
+              <span class="planet-label mars">Марс</span>
+              <div class="bar-wrap"><div class="bar mars" style="width:32%"></div></div>
+              <span class="bar-val mars-val">−63°C</span>
+            </div>
+          </div>
+          <div class="compare-card">
+            <div class="compare-title">Атмосферний тиск</div>
+            <div class="compare-row">
+              <span class="planet-label earth">Земля</span>
+              <div class="bar-wrap"><div class="bar earth" style="width:100%"></div></div>
+              <span class="bar-val earth-val">101 325 Па</span>
+            </div>
+            <div class="compare-row">
+              <span class="planet-label mars">Марс</span>
+              <div class="bar-wrap"><div class="bar mars" style="width:1%"></div></div>
+              <span class="bar-val mars-val">610 Па</span>
+            </div>
+          </div>
+          <div class="compare-card">
+            <div class="compare-title">Склад атмосфери</div>
+            <div class="compare-row">
+              <span class="planet-label earth">Земля</span>
+              <div class="bar-wrap"><div class="bar earth" style="width:78%"></div></div>
+              <span class="bar-val earth-val">78% N₂</span>
+            </div>
+            <div class="compare-row">
+              <span class="planet-label mars">Марс</span>
+              <div class="bar-wrap"><div class="bar mars" style="width:95%"></div></div>
+              <span class="bar-val mars-val">95% CO₂</span>
+            </div>
+          </div>
+          <div class="compare-card">
+            <div class="compare-title">Сила тяжіння</div>
+            <div class="compare-row">
+              <span class="planet-label earth">Земля</span>
+              <div class="bar-wrap"><div class="bar earth" style="width:100%"></div></div>
+              <span class="bar-val earth-val">9,8 м/с²</span>
+            </div>
+            <div class="compare-row">
+              <span class="planet-label mars">Марс</span>
+              <div class="bar-wrap"><div class="bar mars" style="width:38%"></div></div>
+              <span class="bar-val mars-val">3,7 м/с²</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- НЕБЕЗПЕКИ -->
+        <div class="hazards-grid">
+          <div class="hazard-card danger">
+            <span class="badge danger">Критично</span>
+            <span class="hazard-icon">🌪️</span>
+            <h3>Пилові бурі</h3>
+            <p>Охоплюють всю планету на тижні й місяці. Швидкість вітру — до 100 км/год. Блокують сонячне світло і засипають панелі.</p>
+          </div>
+          <div class="hazard-card danger">
+            <span class="badge danger">Критично</span>
+            <span class="hazard-icon">🧊</span>
+            <h3>Перкхлорати в ґрунті</h3>
+            <p>Марсіанський реголіт токсичний для людини. Перкхлорати порушують роботу щитовидної залози і руйнують ДНК.</p>
+          </div>
+          <div class="hazard-card warn">
+            <span class="badge warn">Серйозно</span>
+            <span class="hazard-icon">💀</span>
+            <h3>М'язова атрофія</h3>
+            <p>38% земної гравітації призводять до втрати м'язової маси та щільності кісток. Необхідні щоденні тренування і медикаменти.</p>
+          </div>
+          <div class="hazard-card warn">
+            <span class="badge warn">Серйозно</span>
+            <span class="hazard-icon">🧠</span>
+            <h3>Психологічний тиск</h3>
+            <p>Ізоляція, затримка сигналу до 24 хвилин, відсутність евакуації. Психічна стійкість — такий же критичний ресурс, як кисень.</p>
+          </div>
+          <div class="hazard-card info">
+            <span class="badge info">Вирішувано</span>
+            <span class="hazard-icon">🌞</span>
+            <h3>Сонячні спалахи</h3>
+            <p>Без магнітного поля Марс відкритий для сонячних бурь. Захист — підземні укриття з реголітовим шаром ≥ 2 м.</p>
+          </div>
+          <div class="hazard-card info">
+            <span class="badge info">Вирішувано</span>
+            <span class="hazard-icon">❄️</span>
+            <h3>Ніч та зима</h3>
+            <p>Марсіанська зима у полярних зонах — до −125°C. Вирішення: ядерні реактори RTG, теплоізоляція з аерогелю.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- СТАТИСТИКА -->
+    <section class="section stats">
+      <div class="container reveal">
+        <h2 class="section-title">Ключові цифри</h2>
+        <div class="stats-grid">
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="2033">0</h3>
+            <p>Рік першої висадки</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="6">0</h3>
+            <p>Піонерів першої хвилі</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="54">0</h3>
+            <p>Млн км у найближчому вікні</p>
+          </div>
+          <div class="stat-item">
+            <h3 class="stat-number" data-target="7">0</h3>
+            <p>Місяців мінімальний політ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- НАША МІСІЯ -->
+    <section class="section mission" style="background:linear-gradient(180deg,rgba(255,107,77,.04) 0%,transparent 100%)">
+      <div class="container reveal">
+        <div class="mission-content">
+          <h2 class="section-title">Наша місія</h2>
+          <p class="mission-text">
+            Побудувати першу <span class="highlight">постійну самодостатню колонію</span> на Марсі —<br>
+            не як науковий аванпост, а як справжнє місто. Ми не просто висадимося: ми залишимося назавжди і покладемо початок міжпланетній цивілізації.
+          </p>
+          <div class="mission-quote">
+            «Марс — це не пункт призначення. Це початок нової цивілізації, і вона почнеться вже за нашого життя.»
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ТЕХНОЛОГІЧНИЙ ПРОРИВ -->
+    <section class="section tech">
+      <div class="container reveal">
+        <h2 class="section-title">Технологічний прорив</h2>
+        <div class="tech-grid">
+          <div class="tech-card">
+            <div class="tech-icon-wrap">⚗️</div>
+            <div>
+              <h3>ISRU — ресурси з планети</h3>
+              <p>Реактори Сабатьє перетворюють CO₂ і H₂O на метанове паливо та кисень прямо на поверхні. Нульовий імпорт з Землі.</p>
+            </div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-wrap">🏗️</div>
+            <div>
+              <h3>Автономне 3D-будівництво</h3>
+              <p>Роботи-крани і великоформатні принтери зводять герметичні куполи з пресованого реголіту — без єдиної людини на місці.</p>
+            </div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-wrap">🌱</div>
+            <div>
+              <h3>Замкнута біосфера</h3>
+              <p>Гідропонні ферми під LED-спектром, ентомологічні білкові ферми та водоростеві біореактори — повний харчовий цикл всередині купола.</p>
+            </div>
+          </div>
+          <div class="tech-card">
+            <div class="tech-icon-wrap">🛡️</div>
+            <div>
+              <h3>Захист від радіації</h3>
+              <p>Двометровий шар реголіту над куполами, полімерні водневі екрани та підземні укриття на випадок сонячних спалахів класу X.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <section class="section cta-section" style="background:linear-gradient(180deg,rgba(255,107,77,.04) 0%,transparent 100%)">
+      <div class="container reveal">
+        <h2 class="section-title">Приєднуйся до місії</h2>
+        <div class="cta-row">
+          <div class="cta-card primary">
+            <h3>Познайомся з екіпажем</h3>
+            <p>Шестеро людей, які залишать Землю назавжди. Їхні профілі, підготовка та особисті мотиви.</p>
+            <a href="Exp.html" class="btn btn-primary">Дивитись екіпаж →</a>
+          </div>
+          <div class="cta-card secondary">
+            <h3>Архітектура бази</h3>
+            <p>Куполи, тунелі, системи повітря і тепла. Як виглядатиме перше місто на Марсі.</p>
+            <a href="baza.html" class="btn btn-outline">Про базу →</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <section class="footer-section">
+      <div class="container">
+        <div class="footer-grid">
+          <div class="footer-left">
+            <h2>Зв'яжись<br>з <span>ApoCryps</span></h2>
+            <p>Хочеш стати частиною місії, маєш питання про відбір або просто хочеш слідкувати за прогресом — пиши нам.</p>
+            <div class="social-row">
+              <div class="social-btn">𝕏</div>
+              <div class="social-btn">in</div>
+              <div class="social-btn">▶</div>
+            </div>
+          </div>
+          <div class="footer-right">
+            <form id="contact-form">
+              <input type="text" id="name" name="name" placeholder="Ваше ім'я" required>
+              <input type="email" id="email" name="email" placeholder="Ваш email" required>
+              <textarea id="message" name="message" placeholder="Ваше повідомлення або питання..." required></textarea>
+              <button type="submit" id="submit-btn">Надіслати повідомлення</button>
+            </form>
+          </div>
+        </div>
+        
+    </section>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
